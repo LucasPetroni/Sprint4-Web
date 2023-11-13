@@ -1,0 +1,37 @@
+.containerFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  /* position: block; */
+}
+
+.imgFooter {
+  width: 120px;
+}
+
+.footerText {
+  margin-top: 10px;
+}
+
+.linksFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.logoLinkedin,
+.logoInstagram,
+.logoPorto {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.logoPorto {
+  width: 150px;
+}
