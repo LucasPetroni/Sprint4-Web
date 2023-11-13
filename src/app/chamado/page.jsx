@@ -1,6 +1,13 @@
-export default async function Chamados(chamados) {
-  const response = await fetch("http://localhost:3000/chamado");
-  const listaChamados = await response.json();
+
+
+export default async function Chamado(chamados) {
+  // const response = await fetch("http://localhost:3000/chamado");
+  // const response = await fetch("http://localhost:8080/agilemodalapi/webapi/chamados");
+  // const listaChamados = await response.json();
+  
+  const response = await fetch('http://localhost:3000/chamado/route');
+   const listaChamados = await response.json();
+  console.log(response);
 
   return (
     <div className="container-chamados">
@@ -20,14 +27,17 @@ export default async function Chamados(chamados) {
             </tr>
           </thead>
           <tbody>
+            {/* {console.log(listaChamados, 'lista')} */}
             {listaChamados.map((item, indice) => (
               <tr key={indice}>
-                <td>{item.id}</td>
-                <td>{item.nome}</td>
+                <td>{item.idChamado}</td>
+                <td>{item.codPlacaVeiculo}</td>
+                {/* <td>{item.nome}</td>
                 <td>{item.placa}</td>
                 <td>{item.desc}</td>
-                <td>{item.endereco}</td>
+                <td>{item.endereco}</td> */}
               </tr>
+              // console.log(item)
             ))}
           </tbody>
 
@@ -67,4 +77,14 @@ export default async function Chamados(chamados) {
       </div>
     </div>
   );
+}
+
+export async function GET(resquest, { params }) {
+  const response = await fetch(
+    // "https://run.mocky.io/v3/38fdb4a3-bc14-4202-aae6-a93017eb46bf"
+    "http://localhost:8080/agilemodalapi/webapi/chamados"
+  );
+  const result = await response.json();
+  console.log(result, 'oii')
+  return NextResponse.json(result);
 }
