@@ -16,7 +16,7 @@ export default function Cabecalho() {
               <Link href="/">HOME</Link>
             </li>
             <li>
-              <Link href="/chamados">CHAMADOS</Link>
+              <Link href="/chamado">CHAMADOS</Link>
             </li>
             <li>
               <Link href="/integrantes">INTEGRANTES</Link>
