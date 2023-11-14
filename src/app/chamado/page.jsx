@@ -57,7 +57,7 @@ export default async function Chamado(chamados) {
   );
 }
 
-export async function GET(resquest, { params }) {
+export async function GET(request, { params }) {
   const response = await fetch(
     "http://localhost:8080/agilemodalapi/webapi/chamados"
   );
