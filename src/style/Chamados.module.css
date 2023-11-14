@@ -1,0 +1,63 @@
+/* styles.module.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+
+.containerChamados {
+  text-align: center;
+  margin: 50px;
+  height: 1000vh;
+}
+
+.h1 {
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+}
+
+.Tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+.Tabela th,
+.Tabela td {
+  padding: 1.3vh;
+  border: 1px solid #000000;
+}
+
+.Tabela th {
+  background-color: #00a1fc;
+  color: #ffffff;
+}
+
+.Tabela a {
+  text-decoration: none;
+  color: #000;
+}
+
+.finalizado {
+  font-weight: bold;
+  color: #21da0d;
+}
+
+.iniciado {
+  font-weight: bold;
+  color: rgb(0, 166, 231);
+}
+
+.processando {
+  font-weight: bold;
+  color: #ffa500;
+}
+
+@media screen and (max-width: 768px) {
+  .Tabela th,
+  .Tabela td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .Tabela img {
+    max-width: 80px;
+  }
+}
