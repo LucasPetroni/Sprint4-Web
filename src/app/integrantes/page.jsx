@@ -5,7 +5,7 @@ export default function Cabecalho() {
     <div className={styles.integrantesContainer}>
       <div className={styles.repoLinks}>
         <a
-          href="https://github.com/LucasPetroni/Sprint3"
+          href="https://github.com/LucasPetroni/Sprint4-Web"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.repLink}

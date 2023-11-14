@@ -29,7 +29,7 @@ export default function Home() {
           </p>
 
           <button style={{ textDecoration: "none" }} className={styles.btn}>
-            <Link href="/chamados">CHAMADOS</Link>
+            <Link href="/chamado">CHAMADOS</Link>
           </button>
         </div>
       </main>

@@ -1,10 +1,6 @@
 import styles from "../../style/Chamados.module.css";
 
 export default async function Chamado(chamados) {
-  // const response = await fetch("http://localhost:3000/chamado");
-  // const response = await fetch("http://localhost:8080/agilemodalapi/webapi/chamados");
-  // const listaChamados = await response.json();
-
   const response = await fetch("http://localhost:3000/chamado/route");
   const listaChamados = await response.json();
   console.log(response);
@@ -29,7 +25,6 @@ export default async function Chamado(chamados) {
               <th>LOCAL</th>
               <th>COMPLEMENTO</th>
               <th>SITUAÇÃO</th>
-              <th>EDITAR</th>
             </tr>
           </thead>
           <tbody>
@@ -39,7 +34,7 @@ export default async function Chamado(chamados) {
                 <td>{item.codPlacaVeiculo}</td>
                 <td>{item.desChamado}</td>
                 <td>
-                  {item.desLocal}, N {item.numLogradouro}{" "}
+                  {item.desLocal}, N° {item.numLogradouro}{" "}
                 </td>
                 <td>{item.desComplemento}</td>
                 <td
